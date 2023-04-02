@@ -5,9 +5,10 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // react 18 中严格模式在开发环境下useEffect会执行两次，生产环境正常
+  // <React.StrictMode> 
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
